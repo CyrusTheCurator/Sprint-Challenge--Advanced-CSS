@@ -1,3 +1,10 @@
+.link-styling {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin: 0 1.5vw 0 0;
+  color: #454a59;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,7 +142,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +150,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -163,14 +170,14 @@ p {
 .navbar-container {
   margin: auto;
   width: 52vw;
-  height: 9.3vh;
+  height: auto;
   background-color: #f6f6f6;
 }
 nav {
   display: flex;
   white-space: pre-line;
   justify-content: space-between;
-  padding: 1vw 14.7vw 1vw 16.2vw;
+  padding: 1vw 14.7vw 0.6vw 16.2vw;
 }
 .navbar-container h1 {
   text-align: center;
@@ -180,11 +187,11 @@ nav {
 }
 .navbar-container a {
   font-weight: bold;
-  text-align: center;
   font-size: 1.6rem;
   text-decoration: none;
   margin: 0 1.5vw 0 0;
   color: #454a59;
+  text-align: center;
   /*make this a variable for the theme*/
 }
 footer {
@@ -196,6 +203,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home #header-img {
+  border-radius: 0.4rem;
 }
 .home .intro h2 {
   padding: 15px;
@@ -239,6 +249,23 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  border: none;
+  color: white;
+  padding: 0.9vh 1vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #22283a;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283a;
+  background-color: white;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -247,4 +274,26 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .navbar-container {
+    width: 97vw;
+  }
+  .navbar-container h1 {
+    padding-left: 3.2vw;
+  }
+  .navbar-container a {
+    margin: 0 -1.5vw 0 0vw;
+  }
+  nav {
+    padding: 4vw 11vw 2.3vw 12.5vw;
+  }
+  .home #header-img {
+    max-width: 100%;
+    border-radius: 0;
+    margin-bottom: 0.5vh;
+  }
+  .home .space-images img {
+    width: 100%;
+  }
 }
